@@ -1,18 +1,18 @@
-# Template Extension Specification
+# Aeronet Extension Specification
 
-- **Title:** Template
+- **Title:** Aeronet
 - **Identifier:** <https://stac-extensions.github.io/template/v1.0.0/schema.json>
 - **Field Name Prefix:** aeronet
-- **Scope:** Item, Collection
+- **Scope:** Item
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
-- **Owner**: @your-gh-handles @person2
+- **Owner**: @fabricebrito @sim13pods
 
-This document explains the Template Extension to the [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
-This is the place to add a short introduction.
+This document explains the Aeronet Extension to the [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
+
+The AERONET (AErosol RObotic NETwork) program is a federation of ground-based remote sensing aerosol networks. This extension provides the container to describe an AERONET station.
 
 - Examples:
   - [Item example](examples/item.json): Shows the basic usage of the extension in a STAC Item
-  - [Collection example](examples/collection.json): Shows the basic usage of the extension in a STAC Collection
 - [JSON Schema](json-schema/schema.json)
 - [Changelog](./CHANGELOG.md)
 
@@ -21,41 +21,19 @@ This is the place to add a short introduction.
 The fields in the table below can be used in these parts of STAC documents:
 
 - [ ] Catalogs
-- [x] Collections
+- [ ] Collections
 - [x] Item Properties (incl. Summaries in Collections)
-- [x] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
+- [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
 
-| Field Name           | Type                      | Description                                  |
-| -------------------- | ------------------------- | -------------------------------------------- |
-| template:new_field   | string                    | **REQUIRED**. Describe the required field... |
-| template:xyz         | [XYZ Object](#xyz-object) | Describe the field...                        |
-| template:another_one | \[number]                 | Describe the field...                        |
-
-### Additional Field Information
-
-#### template:new_field
-
-This is a much more detailed description of the field `template:new_field`...
-
-### XYZ Object
-
-This is the introduction for the purpose and the content of the XYZ Object...
-
-| Field Name | Type   | Description                                  |
-| ---------- | ------ | -------------------------------------------- |
-| x          | number | **REQUIRED**. Describe the required field... |
-| y          | number | **REQUIRED**. Describe the required field... |
-| z          | number | **REQUIRED**. Describe the required field... |
-
-## Relation types
-
-The following types should be used as applicable `rel` types in the
-[Link Object](https://github.com/radiantearth/stac-spec/tree/master/item-spec/item-spec.md#link-object).
-
-| Type           | Description                           |
-| -------------- | ------------------------------------- |
-| fancy-rel-type | This link points to a fancy resource. |
+| Field Name             | Type                      | Description                                  |
+| ---------------------- | ------------------------- | -------------------------------------------- |
+| aeronet:site_name      | string                    | **REQUIRED**. AERONET site name              |
+| aeronet:land_use_type  | string                    | **REQUIRED**. Land use type                  |
+| aeronet:L10            | integer                   | **REQUIRED**. Number of days L1              |
+| aeronet:L15            | integer                   | **REQUIRED**. Number of days L1.5            |
+| aeronet:L20            | integer                   | **REQUIRED**. Number of days L2              |
+| aeronet:moon_L15       | integer                   | **REQUIRED**. Number of days Moon L1.5       |
 
 ## Contributing
 
