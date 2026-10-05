@@ -1,44 +1,42 @@
 {
-    "type": "Feature",
-    "stac_version": "1.1.0",
-    "stac_extensions": [
-        "https://raw.githubusercontent.com/Terradue/aeronet-stac-extension/refs/heads/main/json-schema/schema.json"
-    ],
-    "id": "ERM0039FRA",
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
-            4.819,
-            43.5765,
-            32.0
-        ]
-    },
-    "bbox": [
-        4.819,
-        43.5765,
-        4.819,
-        43.5765
-    ],
-    "properties": {
-        "aeronet:L10": 137,
-        "aeronet:L15": 116,
-        "aeronet:L20": 114,
-        "aeronet:land_use_type": "Croplands",
-        "aeronet:moon_L20": 0,
-        "aeronet:site_name": "La_Crau",
-        "title": "La_Crau",
-        "start_datetime": "1994-06-20T00:00:00.000000Z",
-        "datetime": "2025-11-12T09:15:01.724114Z",
-        "end_datetime": "2021-09-30T00:00:00.000000Z"
-    },
-    "links": [
-        
-    ],
-    "assets": {
-        "source": {
-            "href": "https://aeronet.gsfc.nasa.gov/aeronet_locations_extended_v3.txt",
-            "type": "text/csv",
-            "description": "Data source"
-        }
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://raw.githubusercontent.com/Terradue/aeronet-stac-extension/refs/heads/main/json-schema/schema.json"
+  ],
+  "id": "ERM0039FRA",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.819,
+      43.5765,
+      32
+    ]
+  },
+  "bbox": [
+    4.819,
+    43.5765,
+    4.819,
+    43.5765
+  ],
+  "properties": {
+    "aeronet:L10": 137,
+    "aeronet:L15": 116,
+    "aeronet:L20": 114,
+    "aeronet:land_use_type": "Croplands",
+    "aeronet:moon_L15": 0,
+    "aeronet:site_name": "La_Crau",
+    "title": "La_Crau",
+    "start_datetime": "1994-06-20T00:00:00.000000Z",
+    "datetime": "2025-11-12T09:15:01.724114Z",
+    "end_datetime": "2021-09-30T00:00:00.000000Z"
+  },
+  "links": [],
+  "assets": {
+    "source": {
+      "href": "https://aeronet.gsfc.nasa.gov/aeronet_locations_extended_v3.txt",
+      "type": "text/csv",
+      "description": "Data source"
     }
+  }
 }
