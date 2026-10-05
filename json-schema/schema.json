@@ -29,7 +29,7 @@
                     "aeronet:L10",
                     "aeronet:L15",
                     "aeronet:L20",
-                    "aeronet:moon_L20"
+                    "aeronet:moon_L15"
                   ]
                 },
                 {
@@ -79,7 +79,7 @@
           "type": "integer",
           "format": "int32"
         },
-        "aeronet:moon_L20": {
+        "aeronet:moon_L15": {
           "type": "integer",
           "format": "int32"
         }
