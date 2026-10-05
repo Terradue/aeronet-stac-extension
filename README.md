@@ -9,7 +9,8 @@
 
 This document explains the Aeronet Extension to the [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
 
-The AERONET (AErosol RObotic NETwork) program is a federation of ground-based remote sensing aerosol networks. This extension provides the container to describe an AERONET station.
+The AERONET (AErosol RObotic NETwork) program is a federation of ground-based remote sensing aerosol networks.
+This extension provides the container to describe an AERONET station.
 
 - Examples:
   - [Item example](examples/item.json): Shows the basic usage of the extension in a STAC Item
@@ -26,14 +27,14 @@ The fields in the table below can be used in these parts of STAC documents:
 - [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
 
-| Field Name             | Type                      | Description                                  |
-| ---------------------- | ------------------------- | -------------------------------------------- |
-| aeronet:site_name      | string                    | **REQUIRED**. AERONET site name              |
-| aeronet:land_use_type  | string                    | **REQUIRED**. Land use type                  |
-| aeronet:L10            | integer                   | **REQUIRED**. Number of days L1              |
-| aeronet:L15            | integer                   | **REQUIRED**. Number of days L1.5            |
-| aeronet:L20            | integer                   | **REQUIRED**. Number of days L2              |
-| aeronet:moon_L15       | integer                   | **REQUIRED**. Number of days Moon L1.5       |
+| Field Name | Type | Description |
+| ---------- | ---- | ----------- |
+| aeronet:site_name | string | **REQUIRED**. AERONET site name |
+| aeronet:land_use_type | string | **REQUIRED**. Land use type |
+| aeronet:L10 | integer | **REQUIRED**. Number of days L1 |
+| aeronet:L15 | integer | **REQUIRED**. Number of days L1.5 |
+| aeronet:L20 | integer | **REQUIRED**. Number of days L2 |
+| aeronet:moon_L15 | integer | **REQUIRED**. Number of days Moon L1.5 |
 
 ## Contributing
 
